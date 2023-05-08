@@ -45,5 +45,4 @@ public class Medico {
     public int getCrm(){
         return crm;
     }
-
 }

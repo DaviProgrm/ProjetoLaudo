@@ -11,7 +11,7 @@ public class Conexao {
     private Connection con;
 
     public Conexao(){
-        caminho = "jdbc:postgresql://localhost:5432/BD_laudo";
+        caminho = "jdbc:postgresql://localhost:5432/laudo";
         usuario = "postgres";
         senha = "postgres";
     }

@@ -7,22 +7,25 @@ public class Paciente {
     private String nome;
     private String telefone;
     private String endereco;
+    private String datanasci;
 
     public Paciente(){
 
     }
-    public Paciente(int id_paciente, String cpf, String nome, String telefone, String endereco){
+    public Paciente(int id_paciente, String cpf, String nome, String telefone, String endereco, String datanasci){
         this.id_paciente = id_paciente;
         this.cpf = cpf;
         this.nome = nome;
         this.telefone = telefone;
         this.endereco = endereco;
+        this.datanasci = datanasci;
     }
-    public Paciente(String cpf, String nome, String telefone, String endereco){
+    public Paciente(String cpf, String nome, String telefone, String endereco, String datanasci){
         this.cpf = cpf;
         this.nome = nome;
         this.telefone = telefone;
         this.endereco = endereco;
+        this.datanasci = datanasci;
     }
 
     public void setCpf(String cpf) {
@@ -61,5 +64,11 @@ public class Paciente {
     }
     public int getId_paciente(){
         return id_paciente;
+    }
+    public void setDatanasci(String datanasci){
+        this.datanasci = datanasci;
+    }
+    public String getDatanasci(){
+        return datanasci;
     }
 }
